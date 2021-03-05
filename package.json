@@ -1,0 +1,27 @@
+{
+  "name": "teamgenerator",
+  "version": "1.0.0",
+  "description": "Node.js Command-line app",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "jest": "^26.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanesa19805/teamgenerator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanesa19805/teamgenerator/issues"
+  },
+  "homepage": "https://github.com/vanesa19805/teamgenerator#readme"
+}
