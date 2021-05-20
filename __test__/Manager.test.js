@@ -1,4 +1,6 @@
 const Manager= require("../lib/Manager")
+
+
 describe ("Manager",()=>{
     test("constructor", ()=>{
         const manager= new manager("will",25,"will@gmail.com",1009)

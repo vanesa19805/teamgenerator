@@ -1,4 +1,6 @@
 const Employee= require("../lib/Employee")
+
+
 describe ("Employee",()=>{
     test("constructor", ()=>{  
       const employee= new Employee("will",25,"will@gmail.com")
@@ -6,6 +8,8 @@ describe ("Employee",()=>{
       expect(employee.id).toEqual(25)
       expect(employee.email).toEqual("will@gmail.com")
     })
+
+    
    test("getName", ()=>{    
         const employee= new Employee("will",25,"will@gmail.com")
         expect(employee.getName()).toEqual("will")
