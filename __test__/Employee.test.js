@@ -1,4 +1,4 @@
-const Employee= require("../lib/Employee")
+const Employee= require("../lib/Employee");
 
 
 // describe ("Employee",()=>{
@@ -33,19 +33,3 @@ test("canSetEmail", ()=>{
         expect(employee.getRole()).toBe(role)
     });
 
-
-   test("getName", ()=>{   
-        const employee= new Employee("will",25,"will@gmail.com")
-        expect(employee.getName()).toEqual("will")
-    });
-    test("getid", ()=>{    
-
-        const employee= new Employee("will",25,"will@gmail.com")
-        console.log(employee.getid())
-        expect(employee.getid()).toEqual(25)
-    });
-    test("getEmail", ()=>{    
-        const employee= new Employee("will",25,"will@gmail.com")
-        expect(employee.getEmail()).toEqual("will@gmail.com")
-
-    });

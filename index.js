@@ -1,6 +1,7 @@
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
+const generateData = require("./dist/output");
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
@@ -129,7 +130,7 @@ function getEmployee() {
 //function to render data from prompt ansers to html page
 function pushAnswersToRender(employees) {
 try {
-    fs.writeFileSync('index.html', generateFile(employees));
+    fs.writeFileSync('index.html', generateData(employees));
     console.log('Success! Your team profiles page has been created!');
     //console.log(employees);
     } catch (error) {

@@ -26,11 +26,6 @@ const Intern= require("../lib/Intern")
         const employee= new Intern("will",25,"will@gmail.com",school);
         expect(employee.school).toBe(school);
     });
-
-
-
-
-
     test("getSchool", ()=>{
         const intern= new Intern("will",25,"will@gmail.com",1009,"will555","upenn")
     })  

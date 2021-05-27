@@ -5,7 +5,7 @@ const Engineer = require('../lib/Engineer');
 const Intern = require('../lib/Intern');
 
 //function to render the cards with employee data
-function renderCards (employees) {
+function renderCards(employees) {
     let arrayCards = [];
 //iterate through employees array, create html snippet for each, push to final array      
     for (var i=0; i<employees.length; i++) {
@@ -17,7 +17,7 @@ function renderCards (employees) {
         <h4 class="card-title">${employees[i].getRole()}</h4>
         </section>
         <section class="card-body">
-        <p class="card-text">ID: ${employees[i].getId()}</p>
+        <p class="card-text">ID: ${employees[i].getid()}</p>
         <p class="card-text">Email: <a href="mailto:${employees[i].getEmail()}" target="_blank" rel="noopener noreferrer">${employees[i].getEmail()}</a></p>
         `
         if (employees[i].officeNumber) {
@@ -52,8 +52,8 @@ return arrayCards;
 }
 
 //function to render html with the employee data
-function generateFile(employees) {
-    return `
+function generateData(employees) {
+    return`
     <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -83,4 +83,4 @@ function generateFile(employees) {
 }
 
 
-module.exports = generateFile;
+module.exports = generateData
